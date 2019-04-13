@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './components/myStyles.css'
 
-import NameList from './components/NameList'
+import LifeCycleA from './components/LifeCycleA';
+import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
+
 
 class App extends Component {
   render() {
     return (
-      <NameList />
+      <div>
+        <Table />
+      </div>
     );
   }
 }
