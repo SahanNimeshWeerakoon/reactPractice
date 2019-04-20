@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import logo from './logo.svg'
+import './App.css'
 import './components/myStyles.css'
 
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/UserContext';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <ClickCounter name="SAhan" />
-        <HoverCounter />
+        <UserProvider value="SAhan">
+          <ComponentC />        
+        </UserProvider>
       </div>
     );
   }
